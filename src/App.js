@@ -51,7 +51,7 @@ function App() {
         </div>
         <div className='weather-box'>
           <div className="temp">
-            {(weather.main.temp_min)}°c
+            {Math.round(weather.main.temp_min)}°c
       <p className="temp-min">Low-{(weather.main.temp_min)}°c    Max-{(weather.main.temp_max)}°c</p>
       <p className="temp-max">Feels like-{(weather.main.feels_like)}°c</p>
           </div>
