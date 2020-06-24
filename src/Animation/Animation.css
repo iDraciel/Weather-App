@@ -1,0 +1,118 @@
+.windChimeContainer{
+    position:relative;
+    margin:auto;
+    display:flex;
+    width:90px;
+    min-height:300px;
+    max-height:300px;
+  }
+  .rope{
+    position:absolute;
+    margin:5px;
+    left:35px;
+    background:#AB864F;
+    height:250px;
+    width:10px;
+  }
+  .chime1{
+    position:absolute;
+    top:15px;
+    left:5px;
+    margin:5px;
+    background:#EFEEEE;
+    height:75px;
+    width:15px;
+  }
+  .chime2{
+    position:absolute;
+    margin:5px;
+    top:15px;
+    left:23px;
+    background:#EFEEEE;
+    height:200px;
+    width:15px;
+  }
+  .chime3{
+    position:absolute;
+    margin:5px;
+    top:15px;
+    left:42px;
+    background:#EFEEEE;
+    height:150px;
+    width:15px;
+  }
+  .chime4{
+    position:absolute;
+    margin:5px;
+    top:15px;
+    left:60px;
+    background:#EFEEEE;
+    height:100px;
+    width:15px;
+  }
+  .chime1,.chime2,.chime3,.chime4{animation: sway 5s infinite;}
+  .rope,.chunck{animation: sway2 5s infinite;}
+  .chimetop{
+    position:absolute;
+    margin:5px;
+    left:0px;
+    background:#6B5027;
+    height:10px;
+    width:80px;
+  }
+  .chimetoploop{
+    position:absolute;
+    margin:0px;
+    top:0px;
+    left:40px;
+    background:transparent;
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    border:solid #EFEEEE 2px;
+  }
+  .loop1,.loop2,.loop3,.loop4{
+    position:absolute;
+    margin:5px;
+    top:8px;
+    background:transparent;
+    height:5px;
+    width:5px;
+    border-radius:50%;
+    border:solid #EFEEEE 2px;
+  }
+  .loop1{
+    left:8px;
+  }
+  .loop2{
+    left:26px;
+  }
+  .loop3{
+    left:45px;
+  }
+  .loop4{
+    left:63px;
+  }
+  .chunck{
+    position:absolute;
+    margin:5px;
+    top: 60px;
+    left:20px;
+    background:#6B5027;
+    height:10px;
+    width:40px;
+  }
+  
+  /* Standard syntax */
+  @keyframes sway {
+    33% {transform: rotate(5deg);
+    transform-origin: 5px 8px;}
+    66%{transform: rotate(-5deg);
+    transform-origin: 5px 8px;}
+  }
+  @keyframes sway2 {
+    30% {transform: rotate(3deg);
+    transform-origin: 5px 8px;}
+    60%{transform: rotate(-3deg);
+    transform-origin: 5px 8px;}
+  }
